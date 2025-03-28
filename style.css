@@ -1,0 +1,293 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ece1e1;
+    background-color: #00fe94;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    background-color: aqua;
+    color: #fafafa;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #0b0a0a;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #09f44b;
+}
+
+ol {
+    list-style-type: circle;
+    padding: 20;
+    margin: 20;
+    color: white;
+    display: flexbox;
+}
+
+ol li {
+    display: inline-block;
+    margin-right: 10px 10px; /* Adds space between items */
+    align-items: center;
+}
+
+.download-btn button {
+    background-color: hsl(0, 100%, 22%);
+    color: #e8e8e8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-btn button:hover {
+    background-color: #07d2ff;
+}
+
+/* Sticky Navigation */
+nav.sticky {
+    position: fixed;
+    top: 10;
+    width: 100%;
+    z-index: 1000;
+    background-color: #00a6ff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #000000;
+    color: #eadada;
+}
+
+.intro-text {
+    max-width: 50%;
+}
+
+.intro-text h2 {
+    font-size: 2.5rem;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #fff5f5;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #ffaeae;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.intro-img img {
+    max-width: 400px;
+    border-radius: 50%;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    background-color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #f5f5f5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-cards {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents line breaks */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    gap: 20px; /* Adds spacing between skill cards */
+    padding: 10px;
+    scrollbar-width:thin; /* For Firefox */
+    scrollbar-color: #007bff fixed; /* Custom scrollbar color */
+    
+    position: sticky; /* Makes it float */
+    top: 0; /* Sticks it to the top of the page */
+    background: #121212; /* Background to prevent overlap issues */
+    z-index: 100; /* Ensures it's above other content */
+}
+
+/* Hide default scrollbar but allow scrolling */
+.skill-cards::-webkit-scrollbar {
+    height: 9px; /* Thin scrollbar */
+}
+
+.skill-cards::-webkit-scrollbar-track {
+    background: #472121; /* Track color */
+}
+
+.skill-cards::-webkit-scrollbar-thumb {
+    background: #007bff; /* Scrollbar color */
+    border-radius: 5px;
+}
+
+/* Style for individual skill cards */
+.skill-card {
+    min-width: 25px; /* Ensures proper horizontal layout */
+    flex: 0 0 auto;
+    text-align: center;
+    background: #00cd11;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.project-cards {
+    max-height: 400px; /* Set a fixed height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    padding: 10px;
+    scrollbar-width: thin; /* Thin scrollbar for Firefox */
+    scrollbar-color: #007bff transparent; /* Custom scrollbar color */
+    position: sticky;
+    top: 100px; /* Adjust based on layout */
+}
+
+/* Custom Scrollbar for Chrome & Edge */
+.project-cards::-webkit-scrollbar {
+    width: 8px; /* Thin scrollbar */
+}
+
+.project-cards::-webkit-scrollbar-track {
+    background: #000; /* Track background */
+    border-radius: 5px;
+}
+
+.project-cards::-webkit-scrollbar-thumb {
+    background: #007bff; /* Scrollbar color */
+    border-radius: 5px;
+}
+
+/* Style for Individual Project Cards */
+.project-card {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Contact Section */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #1d1616;
+    border-radius: 5px;
+}
+
+.contact input[type="submit"] {
+    background-color: #316194;
+    color: #ffdede;
+    border: none;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4a8b00;
+    color: #f3f3f3;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.social-links a:hover {
+    color: #000000;
+}
+
+/* Scroll-to-Top Button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px 12px;
+    border-radius: 150px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#scrollTopBtn:hover {
+    background-color: #0056b3;
+}
