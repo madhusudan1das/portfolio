@@ -27,7 +27,6 @@ window.addEventListener('scroll', () => {
         nav.classList.remove('sticky');
     }
 });
-
 // Scroll-to-Top Button
 const scrollTopBtn = document.getElementById('scrollTopBtn');
 window.onscroll = function () {
